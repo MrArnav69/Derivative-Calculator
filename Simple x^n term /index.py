@@ -6,4 +6,10 @@ def derivative_calc(num, x):
     n = int(li[1])
     return n*x**(n-1)
 
-print(derivative_calc(num, x))
+def derivative_formula(num):
+    li = list(num.strip().split("^"))
+    n = int(li[1])
+    return f"{n}x^{n-1}"
+
+print("The derivative of the term is:", derivative_calc(num, x))
+print("The derivative formula is:", derivative_formula(num))
