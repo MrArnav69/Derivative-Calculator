@@ -18,3 +18,4 @@ def derivative_calc(f_x, x):
     return (derivative_numerator * x**(-n_denom) - numerator * derivative_denominator) / (x**(-n_denom))**2
 
 print("The derivative of the function is:", derivative_calc(f_x, x))
+print("The value of the derivative at x =", x, "is:", derivative_calc(f_x, x))
